@@ -18,6 +18,7 @@ cardNumberInput.addEventListener("input", function (e) {
 })
 
 confirmBtn.addEventListener("click",() =>{
+    error = false
     if(cardNumberInput.value === ""){
         cardNumberInput.classList.add("error-border")
         cardNumberInput.nextElementSibling.innerHTML = "Cannot be empty"
